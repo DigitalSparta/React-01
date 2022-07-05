@@ -5,5 +5,10 @@ background-color: chartreuse;
 }
 
 .item {
-  color: white;
+  /*color: white;*/
 }
+
+.active{
+  color: gold;
+}
+
