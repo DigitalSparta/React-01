@@ -1,0 +1,12 @@
+
+.item {
+  color: greenyellow;
+}
+
+.item img {
+  width: 80px;
+  border-radius: 50%;
+}
+.likes img {
+  width: 20px;
+}
