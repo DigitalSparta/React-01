@@ -3,10 +3,12 @@ import c from './MyPosts.module.css';
 import Post from './Post/Post';
 const Myposts = (props) => {
   debugger;
-    return <div>
+    return <div className={c.postsBlock}>
       My posts
       <div>
         <textarea></textarea>
+      </div>
+      <div>
         <button>Add post</button>
         <button>Remove</button>
       </div>
