@@ -2,7 +2,13 @@ import React from 'react';
 import c from './MyPosts.module.css';
 import Post from './Post/Post';
 const Myposts = (props) => {
-  debugger;
+
+  let Posts = [
+    {id: 1, message:'Hi, how are you?', likes:'10'},
+    {id: 2, message:'It`s my first post', likes:'1'}
+  ]
+
+  let PostsElements = Posts.map(p=><Post message={p.message} likes={p.likes}/>)
     return <div className={c.postsBlock}>
       My posts
       <div>
@@ -13,12 +19,7 @@ const Myposts = (props) => {
         <button>Remove</button>
       </div>
       <div className={c.posts}>
-      <Post message='Hi, how are you?' likes=' 10'/>
-      <Post message='It`s my first post' likes=' 1'/>
-      <Post />
-      <Post />
-      <Post />
-      <Post />
+        {PostsElements}
       </div>
     </div>
 }
