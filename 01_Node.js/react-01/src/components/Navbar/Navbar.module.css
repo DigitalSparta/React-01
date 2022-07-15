@@ -6,11 +6,24 @@ background-color: chartreuse;
 }
 
 .item {
-  /*color: white;*/
   text-decoration: none;
 }
 
 .active{
   color: gold;
+  text-decoration: none;
+
+}
+
+.friends {
+  padding-top: 100px;
+}
+.item2 {
+  text-decoration: none;
+
+}
+.item_active {
+  text-decoration: none;
+
 }
 
