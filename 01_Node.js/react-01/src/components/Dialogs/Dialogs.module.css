@@ -1,12 +1,12 @@
+
 .dialogs {
-display: grid;
-grid-template-columns: 2fr 10fr;
+    display: grid;
+    grid-template-columns: 2fr 10fr;
 }
 
 .dialogs_Items {
     padding: 10px;
 }
-
 .dialogs_Items .active {
     color: greenyellow;
 }

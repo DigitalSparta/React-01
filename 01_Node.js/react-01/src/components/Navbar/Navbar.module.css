@@ -17,13 +17,16 @@ background-color: chartreuse;
 
 .friends {
   padding-top: 100px;
+  
 }
 .item2 {
   text-decoration: none;
+  border: 10px blue;
 
 }
 .item_active {
   text-decoration: none;
+  border: 10px blue;
 
 }
 
