@@ -8,7 +8,7 @@ const activee = ({isActive}) => isActive ? s.dialogs : s.dialogs_Items;
 const DialogItems = (props) => {
     return (
         <div className={s.dialog + ' ' + s.active}>
-            <NavLink to={'/message/' + props.id} className={activee}>{props.name}</NavLink>
+            <NavLink to={'/dialogs/message/' + props.id} className={activee}>{props.name}</NavLink>
         </div>
     )
 }

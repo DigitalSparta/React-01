@@ -1,18 +1,20 @@
 import React, {useRef} from 'react';
 import c from './MyPosts.module.css';
-import Posts from "./Post/PostsData/Posts";
 import Post from "./Post/Post";
+import {addPosts} from "../../Redux/state";
+import PostsData from "./Post/PostsData/PostsData";
 
-
-
+debugger;
 const MyPosts = (props) => {
+  debugger;
 
-  let PostsElements = Posts.map(p=><Post message={p.message} likes={p.likes}/>)
-  let ref=useRef();
+  let PostsElements = PostsData.map( p => <Post message={p.message} likes={p.likes}/>);
+
+  let ref = useRef(props.state.PostsData);
 
   let addPost = () =>{
-    let text = ref.current.value;
-    alert(text);
+    let text = ref.current.value; debugger;
+    alert (props.addPosts(text));
   }
 
 
@@ -22,7 +24,7 @@ const MyPosts = (props) => {
       <textarea ref={ref}></textarea>
     </div>
     <div>
-      <button onClick={ addPost }>Add post</button>
+      <button onClick={addPost}>Add post</button>
       <button>Remove</button>
     </div>
     <div className={c.posts}>

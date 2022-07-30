@@ -4,10 +4,11 @@ import ProfileInfo from "./ProdileInfo/ProfileInfo";
 
 
 const Profile = (props) => {
+    debugger;
     return (
         <div>
             <ProfileInfo/>
-            <MyPosts Posts={props.state.Posts}/>
+            <MyPosts state={props.state.profilePages} addPosts={props.addPosts}/>
         </div>
 
     );
